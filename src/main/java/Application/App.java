@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 
-import static javafx.application.Application.launch;
 
 public class App extends Application {
     private static Stage primaryStage;
