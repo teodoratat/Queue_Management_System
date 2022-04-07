@@ -1,25 +1,29 @@
 package Application;
 
+import GUI.SimulationFrameController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Timestamp;
-import Controller.Controller;
+
+import static javafx.application.Application.launch;
+
 public class App extends Application {
     private static Stage primaryStage;
+    public static SimulationFrameController simulationFrameController;
+
     @Override
-    public void start(Stage stage) {
-        System.out.println(new Timestamp(System.currentTimeMillis()));
+    public void start(Stage stage) throws IOException {
         primaryStage = stage;
-        primaryStage.setTitle("Models.Polynomial Calculator");
-        App.jumpToView("interface.fxml",552,663);
+        primaryStage.setTitle("Queue Management System");
+        App.jumpToView("queue.fxml", 756, 406);
         stage.show();
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         launch(args);
     }
 
@@ -27,19 +31,23 @@ public class App extends Application {
         return primaryStage;
     }
 
-    public static void jumpToView(String view){
-        jumpToView(view,400,500);
+    public static void jumpToView(String view) {
+        jumpToView(view, 400, 500);
     }
-    public static void jumpToView(String view, int xSize, int ySize){
+
+    public static void jumpToView(String view, int xSize, int ySize) {
         try {
             URL url = App.class.getResource(view);
             FXMLLoader fxmlLoader = new FXMLLoader(url);
             Scene scene = new Scene(fxmlLoader.load(), xSize, ySize);
             primaryStage.setScene(scene);
-
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+    public static void log(String message){
+        simulationFrameController.put(message);
+
+    }
 }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.QueueManagementSystemController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="646.0" style="-fx-font-size: 20; -fx-font-family: VERDANA;" text="QUEUE MANAGEMENT SYSTEM">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.09719999879598618" green="0.5519171953201294" blue="0.8100000023841858" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="67.0" prefWidth="600.0">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label prefHeight="34.0" prefWidth="170.0" style="-fx-font-family: VERDANA; -fx-font-size: 13;" text="Number of Tasks: " />
+            <Spinner fx:id="nrOfTasks" editable="true" prefHeight="26.0" prefWidth="107.0" />
+            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="63.0" />
+            <Label prefHeight="34.0" prefWidth="170.0" style="-fx-font-family: VERDANA; -fx-font-size: 13;" text="Number of Servers: " />
+            <Spinner fx:id="nrOfServers" editable="true" prefHeight="26.0" prefWidth="107.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="67.0" prefWidth="600.0">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label prefHeight="34.0" prefWidth="170.0" style="-fx-font-family: VERDANA; -fx-font-size: 13;" text="Minimum Arrival Time:" />
+            <Spinner fx:id="minArrTime" editable="true" prefHeight="26.0" prefWidth="107.0" />
+            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="63.0" />
+            <Label prefHeight="34.0" prefWidth="170.0" style="-fx-font-family: VERDANA; -fx-font-size: 13;" text="Maximum Arrival Time:" />
+            <Spinner fx:id="maxArrTime" editable="true" prefHeight="26.0" prefWidth="107.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="67.0" prefWidth="600.0">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label prefHeight="34.0" prefWidth="170.0" style="-fx-font-family: VERDANA; -fx-font-size: 13;" text="Minimum Service Time:" />
+            <Spinner fx:id="minSerTime" editable="true" prefHeight="26.0" prefWidth="107.0" />
+            <Separator orientation="VERTICAL" prefHeight="100.0" prefWidth="63.0" />
+            <Label prefHeight="34.0" prefWidth="170.0" style="-fx-font-family: VERDANA; -fx-font-size: 13;" text="Maximum Service Time:" />
+            <Spinner fx:id="maxSerTime" editable="true" prefHeight="26.0" prefWidth="107.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+         </children>
+      </HBox>
+      <Separator prefHeight="26.0" prefWidth="600.0" />
+      <HBox prefHeight="67.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="170.0" style="-fx-font-family: VERDANA; -fx-font-size: 13;" text="    Strategy:" />
+            <ComboBox fx:id="strategyChoice" prefWidth="150.0" />
+            <Label prefHeight="34.0" prefWidth="170.0" style="-fx-font-family: VERDANA; -fx-font-size: 13;" text="     Simulation Interval:" />
+            <Spinner fx:id="simulationTime" editable="true" prefHeight="26.0" prefWidth="107.0" />
+         </children>
+      </HBox>
+
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="startButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onStartClick" prefHeight="56.0" prefWidth="240.0" style="-fx-font-family: VERDANA; -fx-background-color: POWDERBLUE;" text="SIMULATE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
