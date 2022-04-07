@@ -1,0 +1,91 @@
+Generated tasks:
+ID:1 service time: 1 arrival time: 1
+ID:2 service time: 1 arrival time: 1
+ID:3 service time: 1 arrival time: 1
+ID:4 service time: 1 arrival time: 1
+ID:5 service time: 2 arrival time: 1
+Time: 0
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 1
+Server [1] < id: 1; time left: 1(s), arrived at: 1 >  In queue: task: 3, task: 5, 
+Server [2] < id: 2; time left: 1(s), arrived at: 1 >  In queue: task: 4, 
+
+Time: 2
+Server [1] < id: 3; time left: 1(s), arrived at: 1 >  In queue: task: 5, 
+Server [2] < id: 4; time left: 1(s), arrived at: 1 >  In queue: 
+
+Time: 3
+Server [1] < id: 5; time left: 2(s), arrived at: 1 >  In queue: 
+Server [2] < closed > 
+
+Time: 4
+Server [1] < id: 5; time left: 1(s), arrived at: 1 >  In queue: 
+Server [2] < closed > 
+
+Time: 5
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 6
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 7
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 8
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 9
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 10
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 11
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 12
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 13
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 14
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 15
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 16
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 17
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 18
+Server [1] < closed > 
+Server [2] < closed > 
+
+Time: 19
+Server [1] < closed > 
+Server [2] < closed > 
+
+Finished simulation:
+Statistics:
+AverageTime: 0.8
+AverageServiceTime: 1.2
+PeakTime: 1
