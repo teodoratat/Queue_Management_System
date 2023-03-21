@@ -10,3 +10,5 @@ The application is organized in several different packages, which respect the st
 As data structures, we chose to use collections that provide the concept of thread security such as BlockingQueue, Array BlockingQueue or CopyOnWriteArrayList. The AtomicInteger data type is also used for the same reasons mentioned above. In the Server class, the list of tasks on that server at a given time is stored in a BlockingQueue queue.  
 In terms of customer deployment strategies, there are two types: ConcreteStrategyQueue, which distributes tasks to the freest queue, and ConcreteStrategyTime, which sends customers to the queue with the shortest waiting time at that time. These 2 classes implement the Strategy interface, with the addTask method.  
 
+##
+![image](https://user-images.githubusercontent.com/79631600/226591169-1b2e23ef-7736-4731-98f9-ba61250477d6.png)
